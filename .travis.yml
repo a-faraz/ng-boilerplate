@@ -7,7 +7,8 @@ branches:
   only:
   - master
 before_script:
-  - npm install -g @angular/cli
+  - yarn add -g @angular/cli
 script:
 - ng lint
+- yarn run test-headless
 - ng build --prod --base-href https://a-faraz.github.io/ngx-demo/
