@@ -17,3 +17,10 @@ script:
 - ng lint
 - yarn run test-headless
 - yarn build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist/ngx-demo
+  on:
+    branch: master
