@@ -3,10 +3,15 @@ node_js:
   - "9"
 dist: trusty
 sudo: required
+cache:
+  yarn: true
+  directories:
+    - node_modules
 branches:
   only:
   - master
 before_script:
+  - npm install -g yarn
   - yarn add -g @angular/cli
 script:
 - ng lint
