@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { ComponentsModule } from './components';
 import { AppComponent } from './containers';
+import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,9 @@ import { AppComponent } from './containers';
   imports: [
     AppRoutingModule,
     BrowserModule,
-    ComponentsModule
+    ComponentsModule,
+    NbThemeModule.forRoot(),
+    NbLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]
