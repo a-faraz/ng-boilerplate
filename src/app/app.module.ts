@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { NbLayoutModule, NbThemeModule } from '@nebular/theme';
 
 import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 import { ComponentsModule } from './components';
-import { AppComponent } from './containers';
-import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [
